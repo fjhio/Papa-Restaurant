@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Pizza Dine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>The Pizza Dine</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a onclick="toggleCart()" style="cursor:pointer;">Cart</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Luxury Taste Experience</h2>
+<a href="menu.html" class="btn">Order Now</a>
+</section>
+
+<div class="cart-panel" id="cartPanel">
+<h2>Your Cart</h2>
+<div id="cartItems"></div>
+<h3>Total: ₹<span id="totalPrice">0</span></h3>
+<button class="cart-btn" onclick="orderWhatsApp()">Order on WhatsApp</button>
+</div>
+
+<div class="whatsapp-btn" onclick="orderWhatsApp()">🟢</div>
+
+<script src="script.js"></script>
+</body>
+</html>
